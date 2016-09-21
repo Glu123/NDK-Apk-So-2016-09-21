@@ -16,21 +16,21 @@ Android源码 SDK
 
 4-工程目录：
 =============
-NDKHelloworld	
-	|  Android.mk
-	│  AndroidManifest.xml
-	├─jni
-	│      Android.mk
-	│      hello.c
-	├─res
-	└─src
-		└─shuliang
-			└─han
-				└─ndkhelloworld
-					MainActivity.java
+	NDKHelloworld	
+		|  Android.mk
+		│  AndroidManifest.xml
+		├─jni
+		│      Android.mk
+		│      hello.c
+		├─res
+		└─src
+			└─shuliang
+				└─han
+					└─ndkhelloworld
+						MainActivity.java
 5-编译与运行结果：
 ==============
->编译步骤
+	编译步骤
 	----1---在trunk目录下执行 . build/envsetup.sh;     
 		trunk$ . build/envsetup.sh;//声明环境变量
 	----2---在trunk目录下执行  lunch pp_XX-user
@@ -43,7 +43,7 @@ NDKHelloworld
 		Install: out/target/product/pp_XX-user/system/lib/libhello.so  //<--生成的动态库
 		Install: out/target/product/pp_XX-user/system/app/ndkhello.apk //<--生成的APK应用
 		
->将动态库添加到Android应用中
+	将动态库添加到Android应用中
 	----1---取出生成的so库文件
 		out/target/product/pp_XX-user/system/lib/libhello.so //<--生成的动态库
 	----2---通过cmd窗口，进入模拟器的根文件系统
